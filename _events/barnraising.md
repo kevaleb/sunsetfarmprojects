@@ -1,5 +1,7 @@
 ---
 title: Barn Raising
 date: 2015-07-15 12:00:00
+collections:
+  - projects
 ---
-It's a barn raising and stuff
+It's a barn raising and stuffasdfasdfs

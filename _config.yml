@@ -4,3 +4,4 @@ markdown: redcarpet
 excerpt_separator: <!--more-->
 collections:
   - events
+  - projects
