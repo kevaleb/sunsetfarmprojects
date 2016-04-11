@@ -1,0 +1,35 @@
+---
+layout: default
+title: Custom Cut Shirts
+description: We make your baggy shirts fit better
+price: 19.95
+class: home
+---
+<!--<div class="banner home">
+	<hgroup class="">
+		<img src="/images/logos/logo.png" alt="Custom Cut Shirts Logo" />
+		<h1>Sunset Farm Projects</strong></h1>
+		<a id="open-overlay" class="button red">Watch Video (15 Sec.)<i class="fa fa-play"></i></a>
+	</hgroup>
+</div>-->
+
+
+<div class="banner blog-post" style="background-image: url(/images/backgrounds/sunset.jpg);">
+	<hgroup class="">
+		<img src="/images/logos/logo.png" alt="" style="display: block;"/>
+		<h1>Sunset Farm <strong>Projects</strong></h1>
+	</hgroup>
+</div>
+
+<ul class="blogposts">
+	{% for post in site.posts %}
+		<li>
+			<a href="{{ post.url }}">
+				<div class="postbanner" style="background-image: url({{ post.bannerimage }});"></div>
+				<!--<h3>{{ post.category }}</h3>-->
+				<h2>{{ post.title }}</h2>
+				{{ post.excerpt }}
+			</a>
+		</li>
+	{% endfor %}
+</ul>

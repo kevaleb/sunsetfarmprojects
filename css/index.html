@@ -1,0 +1,306 @@
+---
+layout: default
+title: Custom Cut Shirts
+description: We make your baggy shirts fit better
+price: 19.95
+class: home
+---
+<div class="banner home">
+	<img class="left" src="/images/photos/loose-fit.png" alt="" />
+	<hgroup class="">
+		<!--<img src="/images/logos/logo.png" alt="Custom Cut Shirts Logo" />-->
+		<!--<h1>Custom Cut Shirts</h1>-->
+		<h1>We make your baggy shirts <strong>fit Perfectly</strong></h1>
+		<a id="open-overlay" class="button red">Watch Video (15 Sec.)<i class="fa fa-play"></i></a>
+	</hgroup>
+	<img class="right" src="/images/photos/tailored-fit.png" alt="" />
+</div>
+
+<div class="process" id="process">
+	<h3>Here's How It Works</h3>
+	<div>
+		<img src="/images/illustrations/process/measurements.png" alt="Psychology" />
+		<h5><span>1</span>Measure & Mail</h5>
+		<p>Give us a few simple measurements & mail us your shirt.</p>
+	</div>
+	<div class="wide">
+		<img src="/images/illustrations/process/take-in.png" alt="UX Design"/>
+		<h5><span>2</span>Take It In</h5>
+		<p>We'll take in the sides/arms leaving just enough wiggle room.</p>
+	</div>
+	<div>
+		<img src="/images/illustrations/process/perfect-fit.png" alt="Analytics" />
+		<h5><span>3</span>Perfect Fit</h5>
+		<p>And send it back, fitting better than you knew a shirt could fit. </p>
+	</div>
+</div>
+<!--<div class="process" id="process">
+<h3>Here's how it works</h3>
+	<div>
+		<img src="/images/illustrations/process/measure.png" alt="Psychology" />
+		<h5><span>1</span>Measure</h5>
+		<p>Give us a few simple measurements. You can do them yourself... or have a lady friend help.</p>
+	</div>
+	<div>
+		<img src="/images/illustrations/process/ship.png" alt="UX Design" />
+		<h5><span>2</span>Mail</h5>
+		<p>Send us your shirt(s). Yes... through the post office, the old fashioned way.</p>
+	</div>
+	<div>
+		<img src="/images/illustrations/process/look-good.png" alt="Analytics" />
+		<h5><span>3</span>Modify</h5>
+		<p>We’ll take the sides/sleeves in and have your shirt back to you within a few days.</p>
+	</div>
+</div>-->
+
+<section class="measure">
+	<h3>Enter Your Measurements?</h3>
+	<h4>Give us your true Measurements... we'll add the proper amount of breathing room.</h4>
+	<div class="image">
+		<div class="measurements">
+			<img src="/images/illustrations/measurements/bicep.png" alt="bicep size"  id="bicep-size" class="size"/>
+			<p>Give us your fully flexed measurement on this one.</p>
+			<img src="/images/illustrations/measurements/hips.png" alt="hips size" id="hips-size" class="size"/>
+			<p>Measure a little bit below your belt, think the widest part of your butt.</p>
+			<img src="/images/illustrations/measurements/waist.png" alt="waist size" id="waist-size" class="size"/>
+			<p>This will typically be your smallest measurement, just beneath your rib cage. Now is not the time to suck it in.</p>
+			<img src="/images/illustrations/measurements/chest.png" alt="chest size" id="chest-size" class="size"/>
+			<p>Measure just below your arm pits, keep the tape straight all the way around your back and stop flexing.</p>
+			<img src="/images/illustrations/measurements/shirt.png" alt="shirt size" />
+		</div>
+	</div>
+	<form>
+		<label>
+			<span>Chest</span>
+			<input type="text" name="chest" id="chest" value="" />
+		</label>
+		<label>
+			<span>Waist</span>
+			<input type="text" name="waist" id="waist" value="" />
+		</label>
+		<label>
+			<span>Hips</span>
+			<input type="text" name="hips" id="hips" value="" />
+		</label>
+		<label>
+			<span>Bicep</span>
+			<input type="text" name="bicep" id="bicep" value="" />
+			<!--<i class="fa fa-quote-right"></i>-->
+		</label>
+		<!--<span id="open-overlay">VIDEO: How To Measure</span>-->
+	</form>
+	<br />
+	<div class="add-to-cart">
+		<h3 id="price">{{ page.price }}</h3>
+		<label>
+			<span>Qty.</span>
+			<input type="number" name="qty" id="qty" value="1" />
+		</label>
+		<a href="#"
+		    class="snipcart-add-item button red"
+		    data-item-id="1"
+		    data-item-name="Custom Tailored Shirt"
+		    data-item-price="{{ page.price }}"
+		    data-item-weight="1"
+		    data-item-url="http://customcutshirts.com"
+		    data-item-description="Kinda like a warm hug"
+		    data-item-custom1-name="Chest"
+		    data-item-custom1-required="true"
+		    data-item-custom2-name="Waist"
+		    data-item-custom2-required="true"
+		    data-item-custom3-name="Hips"
+		    data-item-custom3-required="true"
+		    data-item-custom4-name="Biceps"
+		    data-item-custom4-required="true"
+		>Add To Cart</a>
+	</div>
+</section>
+<script type="text/javascript" src="https://cdn.snipcart.com/scripts/snipcart.js" id="snipcart"
+  data-api-key="MWZmY2VlY2YtZTRlMS00OWI2LWJjYjItNjcwNTNiNGNhY2Q0NjM1ODc5MTI5MTU0MjM0MzE1"></script>
+
+<link type="text/css" href="https://cdn.snipcart.com/themes/base/snipcart.min.css" rel="stylesheet" />
+
+
+<link rel="stylesheet" href="/css/flickity.css" media="screen">
+<script src="/scripts/flickity.js"></script>
+<div class="gallery js-flickity testimonials">
+	<div class="gallery-cell">
+		<img src="/images/testimonials/hammons.jpg" alt="" />
+		<h4>@jrynehammons</h4>
+		<p><i class="fa fa-quote-left"></i>This is the best fitting shirt that I own now.<i class="fa fa-quote-right"></i></p>	
+	</div>
+	<div class="gallery-cell">
+		<img src="/images/testimonials/church.jpg" alt="" />
+		<h4>@dandchurch</h4>
+		<p><i class="fa fa-quote-left"></i>Just got my shirt. You guys killed it! Fits like a glove.<i class="fa fa-quote-right"></i></p>	
+	</div>
+	<div class="gallery-cell">
+		<img src="/images/testimonials/nick.jpg" alt="" />
+		<h4>@quintessentialgent_</h4>
+		<p><i class="fa fa-quote-left"></i>Whatever your formula is, it is dead on.<i class="fa fa-quote-right"></i></p>	
+	</div>
+</div>
+<script>	
+	$('.testimonials').flickity({
+		// options
+		cellAlign: 'left',
+		autoPlay: 5000,
+		prevNextButtons: false,
+		pageDots: false,
+		wrapAround: true
+//		lazyLoad: 1
+//	  
+//	  contain: true,
+//	  setGallerySize: false,
+//	  imagesLoaded: true
+	});
+</script>
+
+
+<div class="overlay">
+	<span class="close-overlay" id="close-overlay">X</span>
+	<div class="video-wrapper">
+		<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/nj-iDGfQKMg?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+	</div>	
+</div>
+
+<script type="text/javascript">
+	// https://developers.google.com/youtube/iframe_api_reference
+	
+	// global variable for the player
+	var player;
+	
+	// this function gets called when API is ready to use
+	function onYouTubePlayerAPIReady() {
+	  // create the global player from the specific iframe (#video)
+	  player = new YT.Player('video', {
+	    events: {
+	      // call this function when player is ready to use
+	      'onReady': onPlayerReady
+	    }
+	  });
+	}
+	
+	function onPlayerReady(event) {
+	  
+	  // bind events
+	  var playButton = document.getElementById("open-overlay");
+	  playButton.addEventListener("click", function() {
+	    player.playVideo();
+	  });
+	  
+	  var pauseButton = document.getElementById("close-overlay");
+	  pauseButton.addEventListener("click", function() {
+	    player.pauseVideo();
+	  });
+	  
+	}
+	
+	// Inject YouTube API script
+	var tag = document.createElement('script');
+	tag.src = "//www.youtube.com/player_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	
+	
+	
+	
+	jQuery(document).ready(function() {
+//		$('input#chest').val(persistentQueryString['ccs-chest-measurement']);
+//		$('input#waist').val(persistentQueryString['ccs-waist-measurement']);
+//		$('input#hips').val(persistentQueryString['ccs-hips-measurement']);
+//		$('input#bicep').val(persistentQueryString['ccs-bicep-measurement']);
+	});
+	
+	
+		
+	// Quantity
+	
+//	$( "input#qty").change(function() {
+//		var qty = $('input#qty').val();
+//		$('#price').html(
+//			Math.max(
+//				(({{ page.price }}-((qty*2)-2))), 
+//				{{ page.price }}-10
+//			)
+//		);
+//		$('.snipcart-add-item').data('item-quantity',qty);
+//	});
+
+	$( "input#qty").change(function() {
+		var qty = $('input#qty').val();
+		$('#price').html(
+			Math.max(
+				(({{ page.price }}-((qty)-1))), 
+				{{ page.price }}-4
+			)
+		);
+		$('.snipcart-add-item').data('item-quantity',qty);
+	});
+	
+
+	
+	
+	
+	// chest
+	$( "input#chest").change(function() {
+	  var chest = $('input#chest').val();
+	  $('.snipcart-add-item').data('item-custom1-value',chest);
+//	  localStorage["ccs-chest-measurement"] = jQuery("input#chest").val();
+	});
+	
+	$( "input#chest" ).focus(function() {
+		$('.measurements > .visible').removeClass('visible');
+		$('#chest-size').addClass('visible');
+		$('.measure > .image > p').html('');
+	});
+	
+	
+	// waist
+	$( "input#waist").change(function() {
+	  var waist = $('input#waist').val();
+	  $('.snipcart-add-item').data('item-custom2-value',waist);
+//	  localStorage["ccs-waist-measurement"] = jQuery("input#waist").val();
+	});
+	
+	$( "input#waist" ).focus(function() {
+		$('.measurements > .visible').removeClass('visible');
+		$('#waist-size').addClass('visible');
+	});
+	
+	// hips
+	$( "input#hips").change(function() {
+	  var hips = $('input#hips').val();
+	  $('.snipcart-add-item').data('item-custom3-value',hips);
+//	  localStorage["ccs-hips-measurement"] = jQuery("input#hips").val();
+	});
+	
+	$( "input#hips" ).focus(function() {
+		$('.measurements > .visible').removeClass('visible');
+		$('#hips-size').addClass('visible');
+	});
+	
+	// bicep
+	$( "input#bicep").change(function() {
+	  var bicep = $('input#bicep').val();
+	  $('.snipcart-add-item').data('item-custom4-value',bicep);
+//	  localStorage["ccs-bicep-measurement"] = jQuery("input#bicep").val();
+	});
+	
+	$( "input#bicep" ).focus(function() {
+		$('.measurements > .visible').removeClass('visible');
+		$('#bicep-size').addClass('visible');
+	});
+	
+	
+	
+	
+	
+	// Snipcart Custom Thank You Page
+	Snipcart.execute('bind', 'order.completed', function (order) {
+		var url = '/thankyou?order=' + order.token + '&orderid=' + order.invoiceNumber;
+		window.location.href = url;
+	});
+
+	
+</script>

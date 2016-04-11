@@ -1,0 +1,25 @@
+---
+layout: default
+title: Blog
+description: We make your baggy shirts fit better
+permalink: /blog/
+navtitle: blog
+---
+<div class="banner half blog-post" style="background-image: url(/images/banners/blog-banner.jpg);">
+	<hgroup class="">
+		<h1>The Custom Cut Blog</h1>
+	</hgroup>
+</div>
+
+<ul class="blogposts">
+	{% for post in site.posts %}
+		<li>
+			<a href="{{ post.url }}">
+				<div class="postbanner" style="background-image: url({{ post.bannerimage }});"></div>
+				<!--<h3>{{ post.category }}</h3>-->
+				<h2>{{ post.title }}</h2>
+				{{ post.excerpt }}
+			</a>
+		</li>
+	{% endfor %}
+</ul>

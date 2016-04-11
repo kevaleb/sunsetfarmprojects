@@ -1,0 +1,1672 @@
+/* @override http://0.0.0.0:4000/css/style.css */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: #fff;
+}
+
+h1 {
+	font: 900 36px/48px Georgia, "Times New Roman", Times, serif;
+	color: #d64336;
+}
+h2 {
+	font:900  30px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+	left: 1px;
+}
+h3 {
+	font: 500 24px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+	letter-spacing: 1px;
+}
+h4 {
+	font: 500 18px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+	letter-spacing: 1px;
+}
+p {
+	font: 200 18px/1.9em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+}
+ul {
+	font: 200 18px/1.9em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+}
+a {
+	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+}
+a:hover {
+	color: #b23636;
+}
+.button {
+	display: inline-block;
+	position: relative;
+	/*height: 48px;*/
+	width: ;
+	margin:0;
+	padding: 12px 36px;
+	border: 2px solid #fff;
+	/*border-color: #d64336;*/
+	background: #d64336;
+	border-radius: 2px;	
+	font: 100 14px/24px Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 2px;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;	
+	color: #fff;
+	/*color: #d64336;*/
+	
+	background: #d64336;
+	border-color: #d64336;
+	color: #fff;
+}
+.button:hover,
+.button:active {
+	color: #fff;
+	border-color: #d64336;
+	background: #d64336;
+	
+	background: #b83125;
+	border-color: #b83125;
+}
+.button.dark {
+	border-color: #000;
+	color: #000;
+}
+.button.dark:hover {
+	background: #000;
+	color: #fff;
+}
+
+.button.red{
+	
+}
+
+
+
+
+.button > .attention {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: 1px solid rgba(178, 54, 54, 1);
+	border-radius: 3px;
+	-webkit-animation: buttonpulse 1.5s ease-out infinite;
+	        animation: buttonpulse 1.5s ease-out infinite;
+}
+
+
+	
+
+
+/* @group HEADER */
+body > header {
+	position: absolute;
+	z-index: 100000000;
+	width: 100%;
+	height: 60px;
+	padding: 12px;
+	text-align: center;
+}
+body > header > div {
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+}
+body > header > div > a {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	font: 24px/36px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+	color: #fff;
+	background: #;
+}
+body > header > div > a:hover {
+	color: #fff;
+}
+body > header > div > a > img {
+	height: 36px;
+	vertical-align: middle;
+}
+body > header > div > a > span {
+	vertical-align: middle;
+}
+
+
+
+body > header > div > nav {
+	text-align: right;
+	padding: 0 12px 0 0;
+}
+body > header > div > nav > p  {
+	display: none;
+}
+body > header > div > nav > a {
+	position: relative;
+	font: 200 18px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	margin: 0 0 0 18px;
+	text-transform: capitalize;
+}
+body > header > div > nav > a:hover {
+	color:#d64336;
+}
+body > header > div > nav > a.selected {
+	border-bottom: 3px solid #d64336;
+}
+/* @end */
+
+
+/* @group CONTENT */
+.content {
+	position: relative;
+	height: 100%;
+	/*overflow: scroll;*/
+}
+.content > div {
+	/*height: 100%;*/
+	min-height: 100%;
+	/*max-width: 720px;*/
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+}
+.content section {
+	max-width: 720px;
+	margin: 0 auto;	
+	padding: 48px 0;
+}
+
+
+/* @end */
+
+
+/* @group BANNER */
+.banner {
+	position: relative;
+	height: 75%;
+	/*max-height: 720px;*/
+	min-height: 320px;
+	padding: 60px 0;
+	background: radial-gradient(ellipse farthest-corner, #333 12%, black 100%) #000;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	background-position: center;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+}
+.content .banner.half {
+	height: 50%;
+	background-image: radial-gradient(ellipse farthest-corner, #333 24%, black 100%) #000;
+	background-attachment:scroll;
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+	height: 50%;
+	background-color: #000;
+	background-image: radial-gradient(ellipse farthest-corner, #333 24%, black 100%) #000;
+	background-attachment:scroll;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	box-shadow: 0 75px 75px rgba(0,0,0,.75) inset;
+}
+.content .banner.half.blog-post {
+	
+}
+.content .banner.half > hgroup > h1 {
+	background: #000;
+	float: left;
+	padding: 12px 24px;
+}
+
+.banner > img {
+	position: absolute;
+	height: 100%;
+}
+.banner > img.left {
+	left: 0;
+	top: 0;
+}
+.banner > img.right {
+	top: 0;
+	right: 0;
+}
+.banner:before {
+	/*display: none;*/
+	content: '\00a0';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: radial-gradient(circle, rgba(0, 0, 0, .25) 0%, rgba(0,0,0,.75) 100%);
+}
+.banner:after {
+	content: '\00a0';
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+
+
+
+
+/* @group HGROUP */
+.banner > hgroup {
+	position: relative;
+	z-index: 1000;
+	display: inline-block;
+	width: 100%;
+	max-width: 800px;
+	/*margin: 0 -.25em;*/
+	vertical-align: middle;
+	white-space: normal;
+	text-align: center;
+}
+.banner > hgroup > img {
+	max-width: 320px;
+	margin: 0 auto 0px auto;
+}
+.banner > hgroup > h1 {
+	display: inline-block;
+	margin: 0px 0 0 0;
+	padding: 12px 24px;
+	font:700 36px/48px Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 1px;
+	text-shadow: 0 1px 6px rgba(0,0,0,.5);
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 5;
+	/*background: #000;*/
+}
+.banner > hgroup > h1 > strong {
+	display: block;
+	font: 200 36px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 20;
+}
+.banner > hgroup > h2 {
+	/*margin: 24px 0;*/
+	font: 100 18px/60px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	color: rgba(255,255,255,1);
+	text-transform: capitalize;
+}
+.banner > hgroup > a > i {
+	font-size: 18px;
+	text-align: center!important;
+	margin: 0px -18px 0 12px;
+	padding: 8px;
+	border-radius: 24px;
+}
+
+
+
+
+.banner > nav {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	padding: 24px;
+}
+.banner > nav > a {
+	text-decoration: none;
+	font: 200 12px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: rgba(255,255,255,.5);
+}
+.banner > nav > a+a {
+	margin: 0 0 0 12px;
+}
+.banner > nav > a:hover {
+	color: #d64336;	
+}
+
+
+.banner > hgroup.video {
+	
+}
+.banner > hgroup.video > h1 {
+	position: relative;
+	padding: 0 96px 0 0;
+	
+}
+
+/* @end */
+
+
+
+/* @group Video Controls */
+hgroup.video {
+	text-align: left;
+}
+.video-controls {
+	display: inline-block;
+	background: #d64336;
+	padding: 0 72px 0 0;
+	white-space: normal;
+	cursor: pointer;
+	-webkit-transition: padding .2s ease-out 0s;
+}
+.video-controls > h1 {
+	position: relative;
+	padding: 12px 24px;
+	background: #000;
+	display: block;
+	color: #fff;
+}
+.video-controls > h1 > .video-play {
+	/*position: relative;*/
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	width: 72px;
+	height: 72px;
+	margin: -36px 0 0 0;
+	font: 900 48px/72px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	-webkit-transition: width .5s ease-in-out 0s;
+	/*overflow: hidden;*/
+}
+.video-controls > h1 > .video-play > .video-cta {
+	display: block;
+	font: 100 11px/11px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	color: #fff;
+	white-space: nowrap;
+	opacity: 0;
+	-webkit-transition: opacity .2s ease-out 0s;
+}
+
+
+
+.video-controls:hover{
+	padding: 0 96px 0 0;
+}
+.video-controls:hover .video-play {
+	width: 96px;
+	-webkit-transition: width .5s ease-in-out 0s;
+}
+.video-controls:hover > h1 > .video-play > .video-cta {
+	opacity: 1;
+}
+
+
+/* @end */
+/* @end */
+
+
+
+
+
+
+/* @group Home */
+
+/*.home > .main-header {
+	position: absolute;
+	bottom: 0px;
+}
+.home > .main-header > div > a {
+	display: none;
+}
+.home > .main-header > div > nav {
+	width: 100%;
+	text-align: center;
+}*/
+
+
+.banner.home {
+	padding-top: 0;
+}
+.banner.home > hgroup > h1 {
+	margin: 0 0 36px 0;
+	font:200 32px/48px Georgia, "Times New Roman", Times, serif;
+	text-shadow: 0 1px 2px rgba(0,0,0,.5);
+	text-transform: capitalize;
+}
+.banner.home > hgroup > h1 > strong {
+	display: block;
+	text-transform: uppercase;
+	font-size: 48px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.banner.home > hgroup > h2 {
+	font: 200 20px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: none;
+}
+
+/* @end */
+
+
+
+
+
+
+/* @group Testimials */
+.testimonials {
+	bottom: 0;
+	width: 100%;
+	background: #e5e5e5;
+	text-align: center;
+}
+/*.testimonials > div {
+	width: 100%;
+}
+.testimonials > div > div {
+	width: 100%;
+}*/
+.testimonials > div > div > div {
+	width: 100%;
+}
+.testimonials .flickity-viewport {
+	overflow: visible;
+}
+.testimonials button {
+	display: none;
+}
+.testimonials .gallery-cell {
+	/*display: inline-block;*/
+	/*width: 30%;*/
+	width: 100%;
+	margin: -96px 0 0 0;
+	padding: 24px 24px 96px 24px;
+	/*text-align: center!important;*/
+	/*white-space: nowrap;*/
+	/*background: #fff;*/
+}
+.testimonials .gallery-cell > img {
+	/*display: none;*/
+	width: 150px;
+	/*margin: 0 0 36px 0;*/
+	border: 10px solid #e5e5e5;
+	border-radius: 100px;
+	vertical-align: middle;
+}
+.testimonials .gallery-cell > h4 {
+	margin: 0 0 24px 0;
+	font-size: 16px;
+	color: #d64336;
+}
+.testimonials .gallery-cell > h4:before {
+	/*content: '-- ';*/
+}
+.testimonials .gallery-cell > p {
+	position: relative;
+	/*max-width: 480px;*/
+	display: inline-block;
+	padding: 0  24px;
+	/*border-left: 3px solid #fff;*/
+	/*text-align: left;*/
+	vertical-align: middle;
+	white-space: normal;
+	font: 200 20px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+	color: #333;
+}
+.testimonials .gallery-cell > p > i {
+	position: absolute;
+	top: 9px;
+	left: 0;
+	font-size: 16px;
+}
+.testimonials .gallery-cell > p > i~i {
+	left: auto;
+	right: 0;
+}
+/*.testimonials .gallery-cell > p:before,
+.testimonials .gallery-cell > p:after {
+	content: '"';
+	font: bold 1em/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}*/
+
+/* @end */
+
+/* @group Process */
+.process {
+	position: relative;
+	margin: 0 auto;
+	padding: 96px 0;
+	text-align: center;
+	background: #d64336;
+	/*white-space: nowrap;*/
+	counter-reset: my-badass-counter;
+}
+.process:after {
+	content: '\00a0';
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 100%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	background: #d64336;
+	transform: rotate(45deg);
+}
+.process > h3 {
+	margin: 0 0 96px 0;
+	color: #fff;
+	font: 200 36px/48px Georgia, "Times New Roman", Times, serif;
+}
+.process > div {
+	display: inline-block;
+	width: 30%;
+	max-width: 320px;
+	text-align: center;
+	vertical-align: top;
+}
+.process > div+div {
+	margin-left: 24px;
+}
+.process > div > img {
+	display: block;
+	width: 100%;
+	max-width: 350px;
+	margin: 0 auto 24px auto;
+	/*border-bottom: 5px solid #fff;*/
+}
+.process > div > h5 {
+	/*display: none;*/
+	margin: 0 0 6px 0;
+	font: 500 24px/36px Georgia, "Times New Roman", Times, serif;
+	color: #fff;
+	white-space: normal;
+	/*text-align: left;*/
+	letter-spacing: 1px;
+}
+.process > div > h5 > span {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin: 0 12px 0 0;
+	border-radius: 24px;
+	background: #fff;
+	font: 500 16px/21px Georgia, "Times New Roman", Times, serif;
+	color: #d64336;
+	text-align: center;
+	vertical-align: text-bottom;
+}
+.process > div > p {
+	position: relative;
+	/*padding: 0 0 0 48px;*/
+	font: 200 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: rgba(255,255,255,.75);
+	white-space: normal;
+	letter-spacing: 1px;
+	/*text-align: left;*/
+}
+/*.process > div > p:before {
+	content: counter(my-badass-counter);
+	counter-increment: my-badass-counter;
+	
+	position: absolute;
+	top: 6px;
+	left: 0px;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	/*margin: -12px 12px 0 0;*!/
+	/*border-radius: 24px;*!/
+	background: #fff;
+	font: 500 14px/36px Georgia, "Times New Roman", Times, serif;
+	color: #d64336;
+	text-align: center;
+	vertical-align: text-bottom;
+}*/
+/* @end */
+
+
+
+/* @group Measure */
+.content section.measure {
+	margin: 96px auto;
+	/*border: 2px solid #000;*/
+	background: #fff;
+	text-align: center;
+	white-space: nowrap;
+}
+.measure > h3 {
+	font: 200 36px/48px Georgia, "Times New Roman", Times, serif;
+	color: #000;
+	white-space: normal;
+}
+.measure > h4 {
+	padding: 0 24px;
+	font: 200 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #000;
+	white-space: normal;
+}
+
+
+.measure > .image {
+	display: inline-block;
+	width: 320px;
+	padding: 60px 0;
+	vertical-align: middle;
+}
+
+
+.measure > .image > .measurements {
+	position: relative;
+	width: 100%;
+}
+.measure > .image > .measurements > img {
+	width: 100%;
+}
+.measure > .image > .measurements > img.size {
+	position: absolute;
+	opacity: 0;
+	-webkit-transition: all .3s ease-out 0s;
+	width: 100%;
+	left: 0;
+	top: -6px;
+}
+.measure > .image > .measurements > img.size.visible {
+	opacity: 1;
+	top: 0px;
+	-webkit-transition: all .75s ease-in 0s;
+}
+.measure > .image > .measurements > p {
+	position: absolute;
+	top: 100%;
+	left: -6px;
+	width: 100%;
+	margin: 0px 0 0 0;
+	padding: 0 24px;
+	white-space: normal;
+	opacity: 0;
+	-webkit-transition: all .3s ease-in 0s;
+	font: 400 12px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+	letter-spacing: 1px;
+}
+.measure > .image > .measurements > img.visible+p {
+	opacity: 1;
+	left: 0;
+	-webkit-transition: all .5s ease-out 0s;
+}
+
+
+
+
+.measure > form {
+	display: inline-block;
+	width: 120px;
+	vertical-align: middle;
+}
+.measure > form > span {
+	font: 12px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #d64336;
+	cursor: pointer;
+}
+.measure > form > label {
+	position: relative;
+	display: block;
+	margin: 0 0 18px 0;
+	text-align: left;
+}
+.measure > form > label > span {
+	display: block;
+	width: 60px;
+	font: 100 14px/18px Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 2px;
+}
+.measure > form > label > input {
+	width: 100%;
+	padding: 0 48px 0 12px;
+	border: 2px solid #000;
+	border-radius: 3px;
+	outline: none;
+	font: 18px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: left;
+	color: #d64336;
+}
+.measure > form > label > input:focus {
+	border-color: #d64336;
+	outline: none;
+}
+.measure > form > label > i {
+	position: absolute;
+	bottom: 12px;
+	right: 6px;
+	font-size: 14px;
+}
+.measure > form > label:after {
+	content: 'Inches';
+	position: absolute;
+	bottom: 14px;
+	right: 6px;
+	font: 200 10px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+	color: #666;
+	text-transform: capitalize;
+}
+
+
+
+
+
+.measure > .add-to-cart {
+	margin: 48px 0 0 0;
+}
+
+.measure > .add-to-cart > h3 {
+	font: 900 36px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	/*letter-spacing: 2px;*/
+}
+.measure > .add-to-cart > h3:before {
+	content: '$';
+}
+.measure > .add-to-cart > h3:after {
+	content: '/Shirt';
+	position: relative;
+	margin: 0 0 0 6px;
+	/*top: -6px;*/
+	font-size: 36px;
+	font-weight: 100;
+	/*vertical-align: middle;*/
+	/*text-decoration: underline;*/
+}
+
+.measure > .add-to-cart > label {
+	display: inline-block!important;
+	position: relative;
+	display: block;
+	margin: 12px 0;
+}
+.measure > .add-to-cart > label > span {
+	position: absolute;
+	left: 12px;
+	top: 8px;
+	font: 14px/24px Georgia, "Times New Roman", Times, serif;
+}
+.measure > .add-to-cart > label > input {
+	display: block;
+	max-width: 200px;
+	margin: 0 auto;
+	padding: 0 24px 0 48px;
+	border: 2px solid #000;
+	border-radius: 3px;
+	outline: none;
+	font: 18px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: center;
+}
+.measure > .add-to-cart > a.button {
+	display: block;
+	max-width: 200px;
+	margin: 0 auto;
+	padding: 12px 24px;
+}
+
+/* @end */
+
+
+
+
+
+
+
+
+
+
+
+
+/* @group Thank You */
+.content section.thank-you {
+	max-width: 960px;
+	padding: 96px 0 0 0;
+	align-content: #000;
+	text-align: center;
+}
+.thank-you > h1 {
+	margin: 0 0 48px 0;
+	padding: 0 24px;
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 60px;
+	white-space: normal;
+	/*text-align: center;*/
+}
+.thank-you > h2 {
+	padding: 0 24px;
+	font: 200 14px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+}
+.thank-you > p {
+	/*margin: 0 0 48px 0;*/
+	/*text-align: center;*/
+}
+.thank-you > p > strong {
+	display: block;
+}
+
+.thank-you > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+.thank-you > ul > li {
+	position: relative;
+	left: 24px;
+	border-left: 2px solid #000;
+	padding: 0 24px 48px 0;
+	clear: both;
+	white-space: nowrap;
+}
+.thank-you > ul > li:last-of-type {
+	border-left: none;
+}
+
+
+.thank-you > ul > li > section {
+	display: inline-block;
+	width: 40%;
+	padding: 0;
+	vertical-align: top;	
+}
+.thank-you > ul > li > section > img {
+	width: 100%;
+}
+.thank-you > ul > li > section.order-number {
+	position: relative;
+	width: 30%;
+	margin: 0 0 0 10%;
+	border: 2px dashed #ccc;
+	text-align: center;
+	font: 100 36px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	vertical-align: middle;
+}
+.thank-you > ul > li > section.order-number:before {
+	content: 'Order Number';
+	display: block;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 100%;
+	text-align: center;
+	letter-spacing: 2px;
+	font: 900 10px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: uppercase;
+}
+
+
+.thank-you > ul > li > section.mailing-address {
+	position: relative;
+	width: 30%;
+	margin: 0 0 0 10%;
+	border: 2px dashed #ccc;
+	padding: 12px 24px;
+	vertical-align: middle;
+}
+.thank-you > ul > li > section.mailing-address:before {
+	content: 'Mailing Address';
+	display: block;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 100%;
+	text-align: center;
+	letter-spacing: 2px;
+	font: 900 10px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: uppercase;
+}
+.thank-you > ul > li > section.mailing-address > p {
+	font: 500 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	white-space: normal;
+}
+
+
+
+.thank-you > ul > li > hgroup {
+	display: inline-block;
+	width: 60%;
+	white-space: normal;
+	vertical-align: middle;
+}
+.thank-you > ul > li > hgroup > h3 {
+	
+}
+.thank-you > ul > li > hgroup > h3 > span {
+	position: relative;
+	left: -16px;
+	top: -2px;
+	display: inline-block;
+	border: 1px solid #000;
+	background: #000;
+	width: 32px;
+	height: 32px;
+	margin: 0 12px 0 0;
+	text-align: center;
+	border-radius: 36px;
+	color: #fff;
+	font: 200 18px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.thank-you > ul > li > hgroup > p {
+	padding: 0 0 0  48px;
+}
+
+/* @end */
+
+
+
+
+
+/* @group FAQ */
+.faq {
+	
+}
+.faq > section {
+	
+}
+.faq > section > h2 {
+	position: relative;
+	padding: 0 0 12px 0;
+}
+.faq > section > h2:before {
+	content: 'Q.';
+	display: inline-block;
+	/*background: #d64336;*/
+	color: #d64336;
+	margin: 0 12px 0 0;
+	/*padding: 12px;*/
+	vertical-align: middle;
+}
+/*.faq > section > h2:after {
+	content: '\00a0';
+	position: absolute;
+	left: 12px;
+	bottom: -8px;
+	width: 12px;
+	height: 12px;
+	-webkit-transform: rotate(45deg);
+	background: #d64336;
+	
+}*/
+.faq > section > p {
+	position: relative;
+	padding: 0 0 0 24px;
+	border-left: 6px solid #d64336;
+	background: #fff;
+	font: 200 24px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+}
+
+/* @end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @group Overlay */
+.overlay {
+	position: fixed;
+	z-index: 100000000000;
+	width: 100%;
+	height: 100%;
+	left: 300%;
+	top: 0;
+	padding: 48px;
+	background: rgba(0,0,0,.75);
+	text-align: center;
+	white-space: nowrap;
+}
+.overlay.visible {
+	left: 0;
+}
+.overlay > .close-overlay {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	border: 2px solid #fff;
+	border-radius: 24px;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	font: 400 24px/42px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+	cursor: pointer;
+}
+.overlay > .close-overlay:hover {
+	background: #fff;
+	color: #000;
+}
+.overlay > .close-overlay:active {
+	background: #000;
+	color: #fff;
+}
+.overlay > .video-wrapper {
+	display: inline-block;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+.overlay:after {
+	content: '\00a0';
+	display: inline-block;
+	width: 0px;
+	height: 100%;
+	/*background: red;*/
+	vertical-align: middle;
+}
+.overlay > .video-wrapper > iframe {
+	/*top: 0;
+	left: 0;
+	width: 100%;*/
+}
+/* @end */
+
+
+
+/* @group Blog Posts */
+.blogposts {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 96px 0px;
+	list-style: none;
+	text-align: left;
+}
+.blogposts > li {
+	display: inline-block;
+	max-width: 48%;
+	margin: 0 -.25em 4% 0;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-top: none;
+	vertical-align: top;
+}
+.blogposts > li:nth-last-of-type(even) {
+	margin-left: 4%;
+}
+.blogposts > li > a {
+	display: block;
+	padding: 24px;
+	text-decoration: none;
+}
+.blogposts > li > a > .postbanner {
+	height: 150px;
+	margin: -24px -24px 24px -24px;
+	background-color: #000;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.blogposts > li > a > h2 {
+	margin: 0 0 12px;
+	font: 900 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #d64336;
+}
+.blogposts > li > a > h3 {
+	font: 400 11px/14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #999;
+	font-style: italic;
+}
+.blogposts > li > a > p {
+	height: 96px;
+	padding: 0;
+	overflow: hidden;
+	font: 14px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+	text-overflow: ellipsis;
+}
+/* @end */
+
+
+
+
+/* @group Article */
+article {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 36px 0;
+}
+
+
+article > hgroup {
+	margin: 72px 0 48px 0;
+	text-align: center;
+}
+article > h1 {
+	margin: 36px 0;
+}
+article > h2 {
+	margin: 36px 0;
+}
+article > p+h3  {
+	margin: 72px 0 0 0;
+}
+
+
+article > blockquote > p {
+	margin: 48px 0;
+	text-align: center;
+	font: 400 24px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+	color: #b23636;
+	color: #444;
+}
+/*article > blockquote > p:before,
+article > blockquote > p:after {
+	content: '"';
+}*/
+
+article p {
+	margin: 0 0 36px 0;
+	font-size: 20px;
+	overflow: hidden;
+	letter-spacing: 1px;
+}
+article p > img {
+	width: 100%;
+	/*margin: -36px 0 0 0;*/
+}
+article > h3+p {
+	margin: 0 0 36px 0;
+}
+article > p:first-of-type:first-letter { 
+	float: left; 
+	color: #b23636; 
+	font-size: 120px; 
+	line-height: 96px; 
+	vertical-align: top;
+	padding-top: 12px; 
+	padding-right: 24px; 
+	padding-left: 3px; 
+	font-family: Georgia; 
+}
+article > hr {
+	height: 48px;
+	border: none;
+	border-top: 1px dotted #ccc;
+}
+
+
+article > ul {
+	padding: 0 0 0 24px;
+}
+article > ul > li{
+	margin: 36px 0;
+	/*padding: 50px;*/
+	font-size: 20px;
+}
+/* @end */
+
+
+
+
+
+/* @group Subscribe */
+.subscribe {
+	padding: 24px;
+	text-align: center;
+}
+.subscribe > label {
+	display: inline-block;
+	margin: 0 -.25em 0 0;
+	border: 2px solid #444;
+	border-radius: 3px;
+}
+.subscribe > label > span {
+	display: inline-block;
+	width: 75px;
+	margin: 0;
+	padding: 0 12px;
+	font: 400 14px/48px"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-shadow: none;
+}
+.subscribe > label > input {
+	display: inline-block;
+	width: 225px;
+	height: 48px;
+	margin: 0 auto;
+	border-radius: 2px;
+	border: none;
+	outline: none;
+	font:200 16px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+}
+.subscribe > br {
+	display: blck;
+}
+.subscribe > button {
+	display: inline-block;
+	width: 308px;
+	margin: 6px -.25em 0 0;
+}
+
+
+
+
+.free-fitting {
+	display: inline-block;
+	background: #fff;
+	margin: 0 auto;
+	padding: 6px;
+	border-radius: 3px;
+	white-space: nowrap;
+}
+.free-fitting > h3 {
+	display: none;
+	margin: 0 0 12px 0;
+	font: 400 20px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+}
+.free-fitting > label {
+	display: inline-block;
+	background: #fff;
+	vertical-align: top;
+	white-space: nowrap;
+}
+.free-fitting > label > span {
+	display: inline-block;
+	width: 25%;
+	color: #666;
+	max-width: auto;
+}
+.free-fitting > label > input {
+	display: inline-block;
+	width: 250px;
+	height: 48px;
+	padding: 0 12px;
+	border: none;
+	border-radius: 2px;
+	outline: none;
+	font: 200 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+}
+.free-fitting > button {
+	display: inline-block;
+	width: 150px;
+	height: 48px;
+	margin: 0;
+	padding: 0 16px;
+	font: 400 12px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+	white-space: normal;
+}
+/* @end */
+
+
+
+
+/* @group FOOTER */
+footer {
+	width: 100%;
+	bottom: 0px;
+	left: 0;
+	padding: 48px 24px;
+	background: #000;
+	text-align: center;
+	overflow: hidden;
+}
+footer > div {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+footer > div > a {
+	display: block;
+	width: 100%;
+	max-width: 320px;
+	margin: 0 auto;
+	text-decoration: none;
+}
+footer > div > a > img {
+	width: 100%;
+	max-width: 72px;
+}
+footer > div > a > span {
+	display: block;
+	margin: 0 0 12px 0;
+	color: #fff;
+	font: 100 18px/24px Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 2px;
+}
+footer > div > section {
+	display: inline-block;
+	margin: 0 -.25em 0 0;
+	padding: 0px 0;
+	/*width: 33.33%;*/
+	font: 200 14px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #999;
+	vertical-align: top;
+	text-align: center;
+}
+
+footer > div > section.social {
+	padding: 0;
+	margin:  0 0 12px 0;
+	
+}
+footer > div > section.social > a {
+	padding: 0 12px;
+}
+footer > div > section.social > a > span {
+	font-size: 30px;
+	color: #fff;
+}
+footer > div > section.social > a:hover > span {
+	color: #d64336;
+}
+
+footer > div > p {
+	font: inherit;
+	color: inherit;
+	font:200 15px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 0px;
+	color: #999;
+}
+footer > div > p > span {
+	display: inline-block;
+	margin: 0 0 6px 0;
+	padding: 12px;
+	font-size: 16px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+
+footer > div > nav {
+	margin: 0 0 36px;
+}
+footer > div > nav > a {
+	padding: 0 12px;
+	font: 100  "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-decoration: none;
+}
+footer > div > nav > a:hover {
+	color: #d64336;
+}
+/* @end */
+
+
+
+.snipcart-checkout-container {
+
+	z-index: 10000000000000000000!important;
+}
+
+
+
+
+
+
+
+
+@media all and (max-width: 1080px) {
+
+.content .banner.half.blog-post{
+	
+}
+
+
+
+
+article {
+	padding: 36px;
+}
+
+}
+
+
+
+
+@media all and (max-width: 720px) {
+.banner > img {
+	opacity: .5;
+}
+
+
+.blogposts {
+	padding: 48px;
+}
+.blogposts > li,
+.blogposts > li:nth-last-of-type(even) {
+	max-width: 100%;
+	margin: 0 0 48px 0;
+}
+
+
+.process > div {
+	display: block;
+	margin: 0 auto;
+	width: auto;
+	max-width: 320px;
+}
+.process > div+div {
+	margin: 48px auto 0 auto;
+}
+
+
+
+.faq > section {
+	padding: 48px;
+}
+}
+
+
+
+
+
+
+@media all and (max-width: 540px) {
+/*body > header {
+	
+}
+body > header > div > a {
+	/*position: relative;*!/
+	display: block;
+}
+body > header > div > a > span {
+	display: none;
+}
+body > header > div > nav {
+	display: block;
+}
+
+
+.home > .main-header {
+	position: absolute;
+	bottom: auto;
+	top: 0;
+}*/
+
+
+
+.banner {
+	height: auto;
+}
+.banner::after {
+	/*display: none;*/
+}
+.banner > img {
+	height: auto;
+	max-width: 50%;
+	max-height: 100%;
+	opacity: .5;
+}
+.banner > hgroup {
+	padding: 96px 24px;
+	text-shadow: 0 1px 5px rgba(0,0,0,.5);
+}
+.banner > hgroup > img {
+	max-width: 120px;
+	margin: 0 0 24px 0;
+}
+.banner > hgroup > h1 {
+	margin: 0 0 0px 0;
+	font-size: 24px;
+}
+.banner > hgroup > h2 {
+	display: inline-block;
+	margin: 0;
+	color: #fff;
+	font-size: 16px;
+}
+.banner > hgroup > .button {
+	display: none;
+}
+
+
+
+.measure > .image {
+	width: 60%;
+}
+.measure > .image > h3 {
+	
+}
+/*.measure > form {
+	width: 50%;
+	padding: 36px 0;
+	text-align: left;
+}*/
+.measure > form > label {
+	
+}
+
+.thank-you > ul > li {
+	position: relative;
+	/*padding-bottom: 150px;*/
+}
+
+.thank-you > ul > li > hgroup {
+	width: 100%;
+	padding: 0 24px 0 0;
+}
+.thank-you > ul > li > section {
+	display: none;
+}
+.thank-you > ul > li > section.mailing-address,
+.thank-you > ul > li > section.order-number {
+	display: block;
+	width: 320px;
+	margin: 48px auto 24px auto;
+}
+.thank-you > ul > li > section > img {
+	width: auto;
+	height: 100%;
+}
+
+section.measure {
+	padding:24px 24px 96px 24px;
+}
+
+.process > h3 {
+	margin: 0 0 48px 0;
+}
+.process > div+div{
+	margin-top: 150px;
+}
+.process > div > img {
+	margin: 0;
+}
+.process > div > h5 {
+	display: block;
+}
+.process > div > p {
+	position: static;
+	text-align: center;
+}
+
+
+
+
+.banner.home > hgroup > h1 {
+	margin: 0 0 36px 0;
+	font:200 24px/48px Georgia, "Times New Roman", Times, serif;
+	text-transform: capitalize;
+}
+.banner.home > hgroup > h1 > strong {
+	font-size: 36px;
+}
+.banner.home > hgroup > h2 {
+	display: block;
+	margin: 0 auto;
+	font-size: 16px;
+	max-width: 200px;
+}
+
+
+.free-fitting {
+	max-width: 320px;
+	/*background: #f16;*/
+	margin: 0 auto;
+	padding: 0px;
+	/*border: 3px dashed #fff;*/
+	/*border-radius: 3px;*/
+}
+.free-fitting > h3 {
+	margin: 0 0 12px 0;
+	font: 400 20px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+}
+.free-fitting > label {
+	background: #fff;
+	border: none;
+	width: 100%;
+}
+.free-fitting > label > span {
+	float: left;
+	width: 25%;
+	color: #666;
+	max-width: auto;
+}
+.free-fitting > label > input {
+	float: left;
+	width: 75%;
+	/*background: #f16;*/
+}
+.free-fitting > button {
+	display: block;
+	width: 100%;
+	margin: 0;
+	max-width: none;
+	padding: 12px 16px;
+	font: 200 14px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+}
+
+}
+
+
+
+
+
