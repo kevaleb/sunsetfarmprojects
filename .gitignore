@@ -4,4 +4,5 @@ _site/
 
 *.psd
 *.ai
+_stock
 .DS_Store
