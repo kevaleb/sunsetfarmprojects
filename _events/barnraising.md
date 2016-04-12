@@ -1,6 +1,7 @@
 ---
 title: Barn Raising
-date: 2015-07-15T12:00:00.000Z
+event_date: 2015-07-15
+event_time: 8:00 am
 project: pigs
 ---
 
