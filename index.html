@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Home Page
-description: We make your baggy shirts fit better
-price: 19.95
+description: A site about the sunset farm projects
 class: home
 ---
 
@@ -13,28 +12,8 @@ class: home
 	</hgroup>
 </div>
 
-Events
-{% for event in site.events %}
-  <div>
-    <div>
-      <h3>{{ event.title }}</h3>
-      <h4>{{ event.date }}</h4>
-      <p class="text-muted">{{ event.content }}</p>
-  </div>
-{% endfor %}
-
---------------
-
-Projects
-{% for project in site.projects %}
-  <div>
-      <h3>{{ project.title }}</h3>
-      <p>{{ project.content }}</p>
-  </div>
-{% endfor %}
-
 <ul class="blogposts">
-	{% for post in site.posts %}
+	{% for post in site.projects %}
 		<li>
 			<a href="{{ post.url }}">
 				<div class="postbanner" style="background-image: url({{ post.bannerimage }});"></div>

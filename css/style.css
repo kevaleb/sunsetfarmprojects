@@ -188,7 +188,7 @@ body > header > div > nav > a.selected {
 	overflow: hidden;
 }
 .content section {
-	max-width: 720px;
+	max-width: 800px;
 	margin: 0 auto;	
 	padding: 48px 0;
 }
@@ -1104,6 +1104,7 @@ hgroup.video {
 }
 .blogposts > li {
 	display: inline-block;
+	width: 100%;
 	max-width: 48%;
 	margin: 0 -.25em 4% 0;
 	background: #fff;
@@ -1145,6 +1146,76 @@ hgroup.video {
 	color: #666;
 	text-overflow: ellipsis;
 }
+/* @end */
+
+
+
+
+/* @group Events */
+.events {
+	padding: 24px!important;
+}
+.events > h2 {
+	display: none;
+	margin: 0 0 24px;
+	/*text-align: center;*/
+	/*border-bottom: 1px solid #ccc;*/
+	font: 400 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.events > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.events > ul > li {
+	margin: 0 0 24px 0;
+	padding: 0 0 24px 0;
+	/*border: 1px solid #ccc;*/
+	border-bottom: 1px dotted #ccc;
+}
+.events > ul > li:last-of-type {
+	border: none;
+}
+.events > ul > li > div {
+	float: left;
+	width: 100px;
+	margin: 0 24px 0 0;
+	padding: 12px;
+	/*border-right: 1px solid #ccc;*/
+	background: #00c7ae;
+	color: #fff;
+}
+.events > ul > li > div > span {
+	display: block;
+	margin: 0;
+	text-align: center;
+}
+.events > ul > li > div > span.date {
+	font: 400 30px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.events > ul > li > div > span.month {
+	font: 200 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.events > ul > li > hgroup {
+	
+}
+.events > ul > li > hgroup > h2 {
+	padding: 6px 0 0 0;
+	font: 400 24px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	color: #444;
+}
+.events > ul > li > hgroup > h3 {
+	font: 200 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	color: #999;
+}
+.events > ul > li > p {
+	clear: left;
+}
+
 /* @end */
 
 
