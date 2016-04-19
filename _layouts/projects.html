@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="banner half blog-post" style="background-image: url({{ page.bannerimage }});">
+	<hgroup class="">
+		<h1>{{ page.title }}</h1>
+	</hgroup>
+</div>
+<article>
+	{{ content }}
+</article> 
+
+
+<section class="events">
+	<h2>Upcoming Events</h2>
+	<ul>
+{% for event in site.events %}
+{% if page.title == event.project %}
+		<li>
+			<div>
+				<span class="date">{{ event._datetime | date: "%-d" }}</span>
+				<span class="month">{{ event._datetime | date: "%b" }}</span>
+			</div>
+			<hgroup>
+				<h2>{{ event.title }}</h2>
+				<h3>{{ event._datetime | date: "%A %l:%M %p" }}</h3>
+			</hgroup>
+			<p>{{ event.content }}</p>
+		</li>
+{% else %}
+		<p>Sorry, there are currently no events planned.</p>
+{% endif %}
+{% endfor %}
+	</ul>	
+</section>
