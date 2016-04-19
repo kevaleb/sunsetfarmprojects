@@ -7,4 +7,4 @@ project: barn
 
 Blah blah blah blah blah blah. blah blah blah blah. blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah. blah blah blah blah blah blah blah.
 
-Call John Doe for more details: (123) 456-7890
+Call John Doe for more details: **(123) 456-7890**
