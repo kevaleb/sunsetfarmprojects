@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: chickens
-bannerimage: /images/backgrounds/chickens.jpg
+bannerimage_path: /images/backgrounds/chickens.jpg
 ---
 
 
