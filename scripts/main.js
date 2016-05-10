@@ -16,13 +16,23 @@ $(function() {
 		    $("body > header > div > nav").toggleClass("visible");
 		});
 		
-		mixpanel.track('Viewed', {
-	//	    'page name' : document.title,
-		    'url' : window.location.pathname
-		});
+//		mixpanel.track('Viewed', {
+//	//	    'page name' : document.title,
+//		    'url' : window.location.pathname
+//		});
 		
 		
 	});
+	
+	
+	// Sort By Date
+//	$(".events > ul > li").sort(function(a,b){
+//	    return new Date($(a).attr("data-date")) > new Date($(b).attr("data-date"));
+//	}).each(function(){
+//	    $(".events > ul").prepend(this);
+//	})
+	
+	
 	
 	
 	// Find all YouTube videos

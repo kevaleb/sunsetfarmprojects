@@ -1168,10 +1168,18 @@ hgroup.video {
 	padding: 0;
 }
 .events > ul > li {
+	/*display: none;*/
 	margin: 0 0 24px 0;
 	padding: 0 0 24px 0;
 	/*border: 1px solid #ccc;*/
 	border-bottom: 1px dotted #ccc;
+}
+.events > ul > li.today {
+	border: 6px solid #000!;
+}
+.events > ul > li.past {
+	/*display: block;*/
+	background: #f16;
 }
 .events > ul > li:last-of-type {
 	border: none;
