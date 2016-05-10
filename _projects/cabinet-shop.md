@@ -1,5 +1,7 @@
 ---
 layout: projects
 title: cabinet shop
-bannerimage_path: /images/backgrounds/barn.jpg
+bannerimage_path: /images/backgrounds/cabinet-shop.jpg
 ---
+
+
