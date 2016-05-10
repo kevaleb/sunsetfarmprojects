@@ -1,6 +1,6 @@
 ---
 layout: projects
 title: pigs
-bannerimage: /images/backgrounds/pigs.jpg
+bannerimage_path: /images/backgrounds/pigs.jpg
 ---
 asdfasfd
