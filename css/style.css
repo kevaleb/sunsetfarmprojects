@@ -1153,7 +1153,9 @@ hgroup.video {
 
 /* @group Events */
 .events {
-	padding: 24px!important;
+	padding: 0 24px ;
+	background: #e5e5e5;
+	border-top: 1px solid #ccc;
 }
 .events > h2 {
 	display: none;
@@ -1164,15 +1166,19 @@ hgroup.video {
 }
 .events > ul {
 	list-style: none;
-	margin: 0;
-	padding: 0;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 48px 0;
 }
 .events > ul > li {
 	/*display: none;*/
 	margin: 0 0 24px 0;
 	padding: 0 0 24px 0;
 	/*border: 1px solid #ccc;*/
-	border-bottom: 1px dotted #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.events > ul > li:last-of-type {
+	margin: 0;
 }
 .events > ul > li.today {
 	border: 6px solid #000!;
@@ -1188,7 +1194,7 @@ hgroup.video {
 	float: left;
 	width: 100px;
 	margin: 0 24px 0 0;
-	padding: 12px;
+	/*padding: 12px;*/
 	/*border-right: 1px solid #ccc;*/
 	background: #00c7ae;
 	color: #fff;
@@ -1197,14 +1203,23 @@ hgroup.video {
 	display: block;
 	margin: 0;
 	text-align: center;
+	border: 1px solid #ccc;
+	border-top: none;
 }
-.events > ul > li > div > span.date {
-	font: 400 30px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
+
 .events > ul > li > div > span.month {
+	padding: 9px;
+	background: #e03c3c;
+	box-shadow: 0 -1px 0px rgba(0,0,0,.15) inset;
 	font: 200 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+}
+.events > ul > li > div > span.date {
+	padding: 18px 0;
+	background: #fff;
+	font: 500 36px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #000;
 }
 .events > ul > li > hgroup {
 	
