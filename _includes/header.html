@@ -1,17 +1,6 @@
 <header class="main-header">
 	<div>
-		<a href="/"><img src="/images/logos/logo.png" alt="kevin lebaron logo" /><span>Custom Cut Shirts</span></a>
-		<nav>
-			<!--<a href="/blog">Blog</a>
-			<a href="/faq">FAQ</a>
-			<a href="/aboutus">About</a>-->
-			{% for item in site.reports %}
-				{% if item.permalink == page.url %}			
-					<a href="{{ item.permalink }}" class="selected">{{ item.navtitle }}</a>
-				{% else %}
-					<a href="{{ item.permalink }}">{{ item.navtitle }}</a>
-				{% endif %}
-			{% endfor %}
-		</nav>
+		<a href="/"><img src="/images/logos/logo.png" alt="kevin lebaron logo" /><span>Sunset Farm Projects</span></a>
+		{% include nav.html %}
 	</div>
 </header>

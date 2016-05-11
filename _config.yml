@@ -2,6 +2,8 @@ name: Winery Guild
 permalink: pretty
 excerpt_separator: <!--more-->
 collections:
+  main-pages:
+    output: true
   projects:
     output: true
   events:

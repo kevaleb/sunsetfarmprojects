@@ -114,7 +114,7 @@ a:hover {
 
 
 /* @group HEADER */
-body > header {
+.main-header {
 	position: absolute;
 	z-index: 100000000;
 	width: 100%;
@@ -122,12 +122,12 @@ body > header {
 	padding: 12px;
 	text-align: center;
 }
-body > header > div {
+.main-header > div {
 	position: relative;
 	max-width: 800px;
 	margin: 0 auto;
 }
-body > header > div > a {
+.main-header > div > a {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -136,27 +136,27 @@ body > header > div > a {
 	color: #fff;
 	background: #;
 }
-body > header > div > a:hover {
+.main-header > div > a:hover {
 	color: #fff;
 }
-body > header > div > a > img {
+.main-header > div > a > img {
 	height: 36px;
 	vertical-align: middle;
 }
-body > header > div > a > span {
+.main-header > div > a > span {
 	vertical-align: middle;
 }
 
 
 
-body > header > div > nav {
+.main-header > div > nav {
 	text-align: right;
 	padding: 0 12px 0 0;
 }
-body > header > div > nav > p  {
+.main-header > div > nav > p  {
 	display: none;
 }
-body > header > div > nav > a {
+.main-header > div > nav > a {
 	position: relative;
 	font: 200 18px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	text-decoration: none;
@@ -164,10 +164,10 @@ body > header > div > nav > a {
 	margin: 0 0 0 18px;
 	text-transform: capitalize;
 }
-body > header > div > nav > a:hover {
+.main-header > div > nav > a:hover {
 	color:#d64336;
 }
-body > header > div > nav > a.selected {
+.main-header > div > nav > a.selected {
 	border-bottom: 3px solid #d64336;
 }
 /* @end */
@@ -207,7 +207,7 @@ body > header > div > nav > a.selected {
 	background: radial-gradient(ellipse farthest-corner, #333 12%, black 100%) #000;
 	background-size: cover;
 	/*background-attachment: fixed;*/
-	background-position: center;
+	background-position: center center;
 	color: #fff;
 	text-align: center;
 	white-space: nowrap;
@@ -225,7 +225,7 @@ body > header > div > nav > a.selected {
 	background-attachment:scroll;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center bottom;
+	background-position: center;
 	box-shadow: 0 75px 75px rgba(0,0,0,.75) inset;
 }
 .content .banner.half.blog-post {
@@ -1102,6 +1102,16 @@ hgroup.video {
 	list-style: none;
 	text-align: left;
 }
+.blogposts > h2 {
+	/*display: none;*/
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0px 0 48px 0;
+	font: 100 36px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
 .blogposts > li {
 	display: inline-block;
 	width: 100%;
@@ -1109,7 +1119,7 @@ hgroup.video {
 	margin: 0 -.25em 4% 0;
 	background: #fff;
 	border: 1px solid #ccc;
-	border-top: none;
+	/*border-top: none;*/
 	vertical-align: top;
 }
 .blogposts > li:nth-last-of-type(even) {
@@ -1132,6 +1142,8 @@ hgroup.video {
 	margin: 0 0 12px;
 	font: 900 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #d64336;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 .blogposts > li > a > h3 {
 	font: 400 11px/14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -1158,11 +1170,14 @@ hgroup.video {
 	border-top: 1px solid #ccc;
 }
 .events > h2 {
-	display: none;
-	margin: 0 0 24px;
-	/*text-align: center;*/
-	/*border-bottom: 1px solid #ccc;*/
-	font: 400 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	/*display: none;*/
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 96px 0 0px 0;
+	font: 100 36px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 .events > ul {
 	list-style: none;
@@ -1171,11 +1186,14 @@ hgroup.video {
 	padding: 48px 0;
 }
 .events > ul > li {
-	/*display: none;*/
-	margin: 0 0 24px 0;
-	padding: 0 0 24px 0;
-	/*border: 1px solid #ccc;*/
+	position: relative;
+	min-height: 136px;
+	/*margin: 0 0 24px 0;*/
+	padding: 24px 0 24px 124px;
 	border-bottom: 1px solid #ccc;
+}
+.events > ul > li:first-of-type {
+	border-top: 1px solid #ccc;
 }
 .events > ul > li:last-of-type {
 	margin: 0;
@@ -1191,7 +1209,8 @@ hgroup.video {
 	border: none;
 }
 .events > ul > li > div {
-	float: left;
+	position: absolute;
+	left: 0px;
 	width: 100px;
 	margin: 0 24px 0 0;
 	/*padding: 12px;*/
@@ -1222,13 +1241,14 @@ hgroup.video {
 	color: #000;
 }
 .events > ul > li > hgroup {
-	
+	margin: 0 0 12px 0;
 }
 .events > ul > li > hgroup > h2 {
 	padding: 6px 0 0 0;
 	font: 400 24px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: 2px;
 	color: #444;
+	text-transform: capitalize;
 }
 .events > ul > li > hgroup > h3 {
 	font: 200 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -1237,6 +1257,15 @@ hgroup.video {
 }
 .events > ul > li > p {
 	clear: left;
+}
+
+
+
+
+.events > ul > li > ol,
+.events > ul > li > ul {
+	padding: 0 0 0 24px;
+	margin: 0;
 }
 
 /* @end */
@@ -1582,17 +1611,17 @@ article {
 
 
 @media all and (max-width: 540px) {
-/*body > header {
+/*.main-header {
 	
 }
-body > header > div > a {
+.main-header > div > a {
 	/*position: relative;*!/
 	display: block;
 }
-body > header > div > a > span {
+.main-header > div > a > span {
 	display: none;
 }
-body > header > div > nav {
+.main-header > div > nav {
 	display: block;
 }
 
