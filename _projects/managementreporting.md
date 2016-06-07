@@ -1,5 +1,5 @@
 ---
 layout: projects
-title: Management Reporting
+title: management reporting
 bannerimage_path: /images/backgrounds/chickens.jpg
 ---
