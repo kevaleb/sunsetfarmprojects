@@ -11,6 +11,8 @@ navtitle: management
 	</hgroup>
 </div>
 
+<a href="/resources/projects.xlsx">Download</a>
+
 <div class="events">
 	<h2>Upcoming Meetings</h2>
 	<ul id="events">
