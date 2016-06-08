@@ -1,5 +1,5 @@
 ---
 layout: projects
-title: management reporting
+title: meetings
 bannerimage_path: /images/backgrounds/chickens.jpg
 ---

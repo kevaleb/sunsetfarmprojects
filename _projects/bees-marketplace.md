@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: Bees Marketplace
-bannerimage_path: /images/backgrounds/cabinet-shop.jpg
+bannerimage_path: /images/backgrounds/bees.jpg
 ---
 Bees will soon be expanding “big time” at their new location on the south entrance to Colorado City
 

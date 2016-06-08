@@ -131,7 +131,7 @@ a:hover {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	font: 24px/36px Georgia, "Times New Roman", Times, serif;
+	font: 18px/36px Georgia, "Times New Roman", Times, serif;
 	text-decoration: none;
 	color: #fff;
 	background: #;
@@ -1122,13 +1122,15 @@ hgroup.video {
 	/*border-top: none;*/
 	vertical-align: top;
 }
-.blogposts > li:nth-last-of-type(even) {
+.blogposts > li:nth-last-of-type(odd) {
 	margin-left: 4%;
 }
 .blogposts > li > a {
 	display: block;
+	height: 320;
 	padding: 24px;
 	text-decoration: none;
+	overflow: hidden;
 }
 .blogposts > li > a > .postbanner {
 	height: 150px;
@@ -1187,7 +1189,7 @@ hgroup.video {
 }
 .events > ul > li {
 	position: relative;
-	min-height: 136px;
+	min-height: 157px;
 	/*margin: 0 0 24px 0;*/
 	padding: 24px 0 24px 124px;
 	border-bottom: 1px solid #ccc;

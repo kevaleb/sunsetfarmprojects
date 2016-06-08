@@ -1,35 +1,18 @@
 ---
 layout: default
-title: Home Page
-description: A site about the sunset farm projects
-class: home
+title: Management Reporting
+description: 
+navclass: management
+navtitle: management
 ---
-
 <div class="banner" style="background-image: url(/images/backgrounds/sunset.jpg);">
-	<hgroup class="">
-		<img src="/images/logos/logo.png" alt="" style="display: block;"/>
-		<h1>Sunset Farm <strong>Projects</strong></h1>
+	<hgroup>
+		<h1>{{ page.title }}</h1>
 	</hgroup>
 </div>
 
-<ul class="blogposts">
-	<h2>Enterprises</h2>
-	{% for post in site.projects %}
-		{% if post.title != 'meetings' %}
-			<li>
-				<a href="{{ post.url }}">
-					<div class="postbanner" style="background-image: url({{ post.bannerimage_path }});"></div>
-					<!--<h3>{{ post.category }}</h3>-->
-					<h2>{{ post.title }}</h2>
-					{{ post.excerpt }}
-				</a>
-			</li>
-		{% endif %}
-	{% endfor %}
-</ul>
-
 <div class="events">
-	<h2>Schedule</h2>
+	<h2>Upcoming Meetings</h2>
 	<ul id="events">
 	{% assign sorted_events = (site.events | sort: "_datetime") %}
 	{% for event in sorted_events %}
@@ -37,6 +20,7 @@ class: home
 	{% capture eventdate %}{{ event._datetime  | date: "%Y-%m-%-e" }}{% endcapture %}
 	{% capture pagedate %}{{ page.date  | date: "%Y-%m-%-e" }}{% endcapture %}
 	
+		{% if event.project == 'management' %}
 		<li data-event-date="{{ event._datetime | date: "%d-%b-%Y" }}" data-event-date2="{{ event._datetime | date: "%Y-%m-%-e" }}" class="event">
 			<div>
 				<span class="month">{{ event._datetime | date: "%b" }}</span>
@@ -48,7 +32,7 @@ class: home
 			</hgroup>
 			<p>{{ event.content }}</p>
 		</li>
-
+		{% endif %}
 	{% endfor %}
 	</ul>	
 </div>
