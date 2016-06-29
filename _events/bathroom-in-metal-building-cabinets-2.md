@@ -1,6 +1,6 @@
 ---
-title: Bathroom in Metal Building (cabinets) 2
-_datetime: 2016-06-25T08:00:00.000Z
+title: Bathroom in Metal Building
+_datetime: 2016-07-31T08:00:00.000Z
 project: barn
 ---
 
@@ -9,4 +9,3 @@ project: barn
 2. Complete Finish Plumbing
 3. Complete Finish Electrical
 4. Finish bathroom interior
-5. Iron work
