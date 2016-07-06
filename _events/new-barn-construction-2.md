@@ -1,6 +1,6 @@
 ---
 title: new barn construction 2
-_datetime: 2016-06-11T08:00:00.000Z
+event_datetime: 2016-06-11T08:00:00.000Z
 project: barn
 ---
 
