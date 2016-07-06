@@ -118,9 +118,10 @@ a:hover {
 	position: absolute;
 	z-index: 100000000;
 	width: 100%;
-	height: 60px;
+	/*height: 60px;*/
 	padding: 12px;
 	text-align: center;
+	/*background: rgba(0,0,0,.5);*/
 }
 .main-header > div {
 	position: relative;
@@ -128,9 +129,8 @@ a:hover {
 	margin: 0 auto;
 }
 .main-header > div > a {
-	position: absolute;
-	left: 0px;
-	top: 0px;
+	display: block;
+	margin: 0 auto;
 	font: 18px/36px Georgia, "Times New Roman", Times, serif;
 	text-decoration: none;
 	color: #fff;
@@ -140,7 +140,9 @@ a:hover {
 	color: #fff;
 }
 .main-header > div > a > img {
-	height: 36px;
+	display: block;
+	margin: 0 auto;
+	height: 48px;
 	vertical-align: middle;
 }
 .main-header > div > a > span {
@@ -150,7 +152,7 @@ a:hover {
 
 
 .main-header > div > nav {
-	text-align: right;
+	text-align: center;
 	padding: 0 12px 0 0;
 }
 .main-header > div > nav > p  {
@@ -158,11 +160,12 @@ a:hover {
 }
 .main-header > div > nav > a {
 	position: relative;
-	font: 200 18px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 200 12px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	text-decoration: none;
 	color: #fff;
-	margin: 0 0 0 18px;
-	text-transform: capitalize;
+	margin: 0 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 .main-header > div > nav > a:hover {
 	color:#d64336;
@@ -1351,6 +1354,51 @@ article > ul > li{
 	font-size: 20px;
 }
 /* @end */
+
+
+
+
+
+
+/* @group Managers */
+.managers {
+	text-align: center;
+}
+.managers > h2 {
+	margin-bottom: 48px;
+}
+.managers > ul {
+	
+}
+.managers > ul > li {
+	display: inline-block;
+	width: 240px;
+	margin: 0 0 48px 0;
+	/*border-right: 1px dotted #ccc;*/
+	vertical-align: top;
+}
+.managers > ul > li:last-of-type {
+	border: none;
+}
+.managers > ul > li:before {
+	content: '\00a0';
+	display: block;
+	width: 96px;
+	height: 96px;
+	margin: 0 auto;
+	border: 3px solid #ccc;
+	border-radius: 96px;
+	background: #e5e5e5;
+}
+.managers > ul > li > h3 {
+	font:900 14px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: uppercase;
+}
+.managers > ul > li > h4 {
+	font: 12px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+/* @end */
+
 
 
 
