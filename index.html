@@ -30,6 +30,7 @@ class: home
 
 <div class="events">
 	<h2>Schedule</h2>
+	<p style="text-align: center;">Workdays are scheduled every 1st and 2nd Saturdays.</p>
 	<ul id="events">
 	{% assign sorted_events = (site.events | sort: "_datetime") %}
 	{% for event in sorted_events %}
