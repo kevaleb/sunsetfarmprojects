@@ -1,6 +1,6 @@
 ---
 title: Meeting - New Ideas and Projects
-_datetime: 
+opening_time: 
 project: management
 ---
 
