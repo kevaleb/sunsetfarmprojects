@@ -14,7 +14,7 @@ permalink: /schedule/
 </div>
 
 <div class="events">
-	<h2 style="text-align: center;">Workdays are scheduled every 1st and 2nd Saturdays.</h2>
+	<p style="text-align: center;">Workdays are scheduled every 1st and 2nd Saturdays.</p>
 	<ul id="events">
 	{% assign sorted_events = (site.events | sort: "event_datetime") %}
 	{% for event in sorted_events %}
