@@ -1,11 +1,11 @@
 ---
-title: New barn construction 3
+title: New Barn Construction July
 event_datetime: 2016-07-09T08:00:00.000Z
 project: barn
 ---
 
 
-1. Complete Ironwork In Milking Parlor&nbsp;
+1. Complete Ironwork In Milking Parlor
 2. Complete Waterproofing On Floors
 3. Hollow Metal Doors & Frames 100%
 4. Rough Plumbing/Electrical 100%
