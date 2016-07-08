@@ -9,3 +9,4 @@ project: barn
 2. Complete Finish Plumbing
 3. Complete Finish Electrical
 4. Finish bathroom interior
+5. Our goal is to have this bathroom completed by the end of July
