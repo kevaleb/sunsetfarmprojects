@@ -1,6 +1,6 @@
 ---
 title: Bathroom in Metal Building
-event_datetime: 2016-07-31T08:00:00.000Z
+event_datetime: 2016-07-09T08:00:00.000Z
 project: barn
 ---
 
@@ -9,3 +9,4 @@ project: barn
 2. Complete Finish Plumbing
 3. Complete Finish Electrical
 4. Finish bathroom interior
+5. Our goal is to have this bathroom completed by the end of July
