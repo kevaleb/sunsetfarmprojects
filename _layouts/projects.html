@@ -17,11 +17,11 @@ layout: default
 	{% assign sorted_events = (site.events | sort: "_datetime") %}
 	{% for event in sorted_events %}
 	
-	{% capture eventdate %}{{ event._datetime  | date: "%Y-%m-%-e" }}{% endcapture %}
-	{% capture pagedate %}{{ page.date  | date: "%Y-%m-%-e" }}{% endcapture %}
+	{% capture eventdate %}{{ event.event_datetime  | date: "%Y-%m-%-e" }}{% endcapture %}
+	{% capture currentdate %}{{ 'now' | date: "%Y-%m-%-e" }}{% endcapture %}
 	
-		{% if page.title == event.project and eventdate > pagedate %}
-		<li data-event-date="{{ event._datetime | date: "%d-%b-%Y" }}" data-event-date2="{{ event._datetime | date: "%Y-%m-%-e" }}" class="event">
+		{% if page.title == event.project and eventdate >= currentdate %}
+		<li data-event-date="{{ event.event_datetime | date: "%Y/%m/%d" }}" class="event">
 			<div>
 				<span class="month">{{ event._datetime | date: "%b" }}</span>
 				<span class="date">{{ event._datetime | date: "%-d" }}</span>
@@ -38,19 +38,17 @@ layout: default
 </div>
 
 <script type="text/javascript">
-    // Hide Past Posts
-    var date = new Date(),
-    var currentDate = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
-    $(".event").each(function() {
-    	var specifiedDate = $(this).attr('data-event-date2');
-    	
-    	if ($(this).attr('data-event-date2') > currentDate) {
-    		$(this).addClass('today');
-    	} else if (currentDate > $(this).attr('data-event-date2')) {
-    		$(this).addClass('past');
-    	} else {
-    		$(this).addClass('future');
-    	}
-    });
-	})(jQuery);
+	var d = new Date();
+    var month = d.getMonth()+1;
+    var day = d.getDate();
+    var today = d.getFullYear() + '/' +
+        ((''+month).length<2 ? '0' : '') + month + '/' +
+        ((''+day).length<2 ? '0' : '') + day;
+
+    $( ".event" )
+    	.filter(function( index ) {
+    		return $(this).data('event-date') <= today;
+    }).addClass('old');
+    
+    $( ".yyy" ).html( today );
 </script>

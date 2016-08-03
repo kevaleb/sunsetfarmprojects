@@ -1197,6 +1197,9 @@ hgroup.video {
 	padding: 24px 0 24px 124px;
 	border-bottom: 1px solid #ccc;
 }
+.events > ul > li.old {
+	display: none;
+}
 .events > ul > li:first-of-type {
 	border-top: 1px solid #ccc;
 }
