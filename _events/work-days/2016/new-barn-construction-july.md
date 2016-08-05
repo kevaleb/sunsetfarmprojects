@@ -1,6 +1,6 @@
 ---
 title: New Barn Construction July
-event_datetime: 2016-07-09T08:00:00.000Z
+event_datetime: 2016-08-31T08:00:00.000Z
 project: barn
 ---
 
@@ -17,3 +17,5 @@ project: barn
 10. Misc Concrete At Main Building In Progress
 11. Main Electrical Service In Progress
 12. We would like to have the above items complete by the end of July
+13. Items remaining for August:
+14. Hollow Metal Door & Frame Install, Insulation, Drywall, Excavation, Misc Concrete On The Main Building, Iron Work in Milikng Parlor.
