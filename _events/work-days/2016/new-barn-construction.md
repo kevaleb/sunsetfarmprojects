@@ -1,5 +1,5 @@
 ---
-title: New Barn Construction July
+title: New Barn Construction
 event_datetime: 2016-08-31T08:00:00.000Z
 project: barn
 ---
