@@ -4,7 +4,7 @@ title: Looking for help with bottling operation for the Dairy
 category:
 author: Kevin LeBaron
 permalink:
-banner_image_path: /images/banners/milkcows.jpg
+banner_image_path: /images/banners/bottling.jpg
 authorimage: kevin.jpg
 ---
 
