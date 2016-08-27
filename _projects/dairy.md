@@ -5,4 +5,4 @@ bannerimage_path: /images/banners/milkcows.jpg
 ---
 
 
-Our milk is high quality.&nbsp;
+We produce high quality, Organic, GMO FREE, whole milk and our New dairy facilities in the new barn are “Coming Soon”.
