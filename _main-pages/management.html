@@ -64,7 +64,7 @@ navtitle: management
 
 
 
-<div class="events">
+<!--<div class="events">
 	<h2>Upcoming Meetings</h2>
 	<ul id="events">
 	{% assign sorted_events = (site.events | sort: "event_datetime") %}
@@ -88,7 +88,62 @@ navtitle: management
 		{% endif %}
 	{% endfor %}
 	</ul>	
+</div>-->
+
+
+
+
+
+<div class="events">
+	<h2>Upcoming Meetings</h2>
+	<!--<p style="text-align: center;">Workdays are scheduled every 1st and 2nd Saturdays.</p>-->
+	<ul id="events">
+	{% assign sorted_events = (site.events | sort: "event_datetime") %}
+	{% for event in sorted_events %}
+	
+	{% capture eventdate %}{{ event.event_datetime  | date: "%Y-%m-%-e" }}{% endcapture %}
+	{% capture currentdate %}{{ 'now' | date: "%Y-%m-%-e" }}{% endcapture %}
+		
+		{% if eventdate >= currentdate %}
+		{% if event.project == 'management' %}
+		<li data-event-date="{{ event.event_datetime | date: "%Y/%m/%d" }}" class="event">
+			<div>
+				<span class="month">{{ event.event_datetime | date: "%b" }}</span>
+				<span class="date">{{ event.event_datetime | date: "%-d" }}</span>
+			</div>
+			<hgroup>
+				<h2>{{ event.title }}</h2>
+				<h3>{{ event.event_datetime | date: "%A %l:%M %p" }}</h3>
+			</hgroup>
+			<p>{{ event.content }}</p>
+		</li>
+		{% endif %}
+		{% endif %}
+	{% endfor %}
+	</ul>	
 </div>
+
+
+<script type="text/javascript">
+	var d = new Date();
+    var month = d.getMonth()+1;
+    var day = d.getDate();
+    var today = d.getFullYear() + '/' +
+        ((''+month).length<2 ? '0' : '') + month + '/' +
+        ((''+day).length<2 ? '0' : '') + day;
+
+    $( ".event" )
+    	.filter(function( index ) {
+    		return $(this).data('event-date') <= today;
+    }).addClass('old');
+    
+    $( ".yyy" ).html( today );
+</script>
+
+
+
+
+
 
 <section class="downloads editable" style="text-align: center; padding: 48px 0;">
 	<h2>Documents</h2>
