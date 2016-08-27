@@ -94,9 +94,9 @@ navtitle: management
 
 
 
-<div class="events">
+<!--<div class="events">
 	<h2>Upcoming Meetings</h2>
-	<!--<p style="text-align: center;">Workdays are scheduled every 1st and 2nd Saturdays.</p>-->
+	<!--<p style="text-align: center;">Workdays are scheduled every 1st and 2nd Saturdays.</p>--*>
 	<ul id="events">
 	{% assign sorted_events = (site.events | sort: "event_datetime") %}
 	{% for event in sorted_events %}
@@ -138,18 +138,18 @@ navtitle: management
     }).addClass('old');
     
     $( ".yyy" ).html( today );
-</script>
+</script>-->
 
 
 
 
 
 
-<section class="downloads editable" style="text-align: center; padding: 48px 0;">
+<div class="downloads editable" style="text-align: center; padding: 48px 0; background: #f2f2f2;">
 	<h2>Documents</h2>
 	<a href="/resources/projects.xlsx">Download: Enterprise &amp; Projects Quarterly</a>
 	<br /><br />
 	<a href="/resources/policyforcashdisbursementsr1.docx.pdf">Policy For Cash Disbursement</a>
 	<br /><br />
 	<a href="/resources/pur req scg.xls">Purchase Requisition Form</a>
-</section>
+</div>
