@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Looking for help with bottling operation for the Dairy
+title: 'Help needed: Milk Bottling'
 category:
 author: Kevin LeBaron
 permalink:
