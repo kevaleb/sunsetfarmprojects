@@ -51,7 +51,7 @@ permalink: /schedule/
 
     $( ".event" )
     	.filter(function( index ) {
-    		return $(this).data('event-date') <= today;
+    		return $(this).data('event-date') < today;
     }).addClass('old');
     
     $( ".yyy" ).html( today );
