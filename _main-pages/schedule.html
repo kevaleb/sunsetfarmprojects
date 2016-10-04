@@ -42,17 +42,17 @@ permalink: /schedule/
 
 
 <script type="text/javascript">
-	var d = new Date();
-    var month = d.getMonth()+1;
-    var day = d.getDate();
-    var today = d.getFullYear() + '/' +
-        ((''+month).length<2 ? '0' : '') + month + '/' +
-        ((''+day).length<2 ? '0' : '') + day;
+// 	var d = new Date();
+//     var month = d.getMonth()+1;
+//     var day = d.getDate();
+//     var today = d.getFullYear() + '/' +
+//         ((''+month).length<2 ? '0' : '') + month + '/' +
+//         ((''+day).length<2 ? '0' : '') + day;
 
-    $( ".event" )
-    	.filter(function( index ) {
-    		return $(this).data('event-date') < today;
-    }).addClass('old');
+//     $( ".event" )
+//     	.filter(function( index ) {
+//     		return $(this).data('event-date') < today;
+//     }).addClass('old');
     
-    $( ".yyy" ).html( today );
+//     $( ".yyy" ).html( today );
 </script>
