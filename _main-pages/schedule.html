@@ -23,7 +23,7 @@ permalink: /schedule/
 	{% capture eventdate %}{{ event.event_datetime  | date: "%Y-%m-%-e" }}{% endcapture %}
 	{% capture currentdate %}{{ 'now' | date: "%Y-%m-%-e" }}{% endcapture %}
 		
-		{% if eventdate >= currentdate %}
+		<!--{% if eventdate >= currentdate %}-->
 		<li data-event-date="{{ event.event_datetime | date: "%Y/%m/%d" }}" class="event">
 			<div>
 				<span class="month">{{ event.event_datetime | date: "%b" }}</span>
@@ -35,7 +35,7 @@ permalink: /schedule/
 			</hgroup>
 			<p>{{ event.content }}</p>
 		</li>
-		{% endif %}
+		<!--{% endif %}-->
 	{% endfor %}
 	</ul>	
 </div>
