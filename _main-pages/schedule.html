@@ -23,7 +23,7 @@ permalink: /schedule/
 	{% capture eventdate %}{{ event.event_datetime  | date: "%Y-%m-%-e" }}{% endcapture %}
 	{% capture currentdate %}{{ 'now' | date: "%Y-%m-%-e" }}{% endcapture %}
 		
-		<!--{% if eventdate >= currentdate %}-->
+		
 		<li data-event-date="{{ event.event_datetime | date: "%Y/%m/%d" }}" class="event">
 			<div>
 				<span class="month">{{ event.event_datetime | date: "%b" }}</span>
@@ -35,24 +35,24 @@ permalink: /schedule/
 			</hgroup>
 			<p>{{ event.content }}</p>
 		</li>
-		<!--{% endif %}-->
+		
 	{% endfor %}
 	</ul>	
 </div>
 
 
 <script type="text/javascript">
-// 	var d = new Date();
-//     var month = d.getMonth()+1;
-//     var day = d.getDate();
-//     var today = d.getFullYear() + '/' +
-//         ((''+month).length<2 ? '0' : '') + month + '/' +
-//         ((''+day).length<2 ? '0' : '') + day;
+	var d = new Date();
+    var month = d.getMonth()+1;
+    var day = d.getDate();
+    var today = d.getFullYear() + '/' +
+        ((''+month).length<2 ? '0' : '') + month + '/' +
+        ((''+day).length<2 ? '0' : '') + day;
 
-//     $( ".event" )
-//     	.filter(function( index ) {
-//     		return $(this).data('event-date') < today;
-//     }).addClass('old');
+    $( ".event" )
+    	.filter(function( index ) {
+    		return $(this).data('event-date') < today;
+    }).addClass('old');
     
-//     $( ".yyy" ).html( today );
+    $( ".yyy" ).html( today );
 </script>
