@@ -1,6 +1,6 @@
 ---
 title: New Barn Construction
-event_datetime: 2016-08-31T08:00:00.000Z
+event_datetime: 2016-08-31 08:00:00
 project: barn
 ---
 
@@ -19,3 +19,4 @@ project: barn
 12. We would like to have the above items complete by the end of July
 13. Items remaining for August:
 14. Hollow Metal Door & Frame Install, Insulation, Drywall, Excavation, Misc Concrete On The Main Building, Iron Work in Milikng Parlor.
+15. Updates 10-4-16: &nbsp;Drywal is hung and ready for finishers. &nbsp;Stucco scaffolding is set up and waiting for lathers. &nbsp;The bulk of the grading work is complete and we're ready to move onto the infastructure work and the corrals. &nbsp;The sewage holding pond is 98% complete. &nbsp;Working on completing the concrete walls for the loading docs and the lower basement entry.
