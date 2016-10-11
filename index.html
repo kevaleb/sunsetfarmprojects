@@ -12,46 +12,14 @@ class: home
 	</hgroup>
 </div>
 
-<ul class="blogposts">
-	<h2>Enterprises</h2>
-	{% for post in site.projects %}
-		{% if post.title != 'meetings' %}
-			<li>
-				<a href="{{ post.url }}">
-					<div class="postbanner" style="background-image: url({{ post.bannerimage_path }});"></div>
-					<!--<h3>{{ post.category }}</h3>-->
-					<h2>{{ post.title }}</h2>
-					{{ post.excerpt }}
-				</a>
-			</li>
-		{% endif %}
-	{% endfor %}
-</ul>
+{% include enterprises.html %}
 
 <div class="events">
 	<h2>Schedule</h2>
 	<p style="text-align: center;">Workdays are scheduled every 1st and 2nd Saturdays.</p>
 	<ul id="events">
-	{% assign sorted_events = (site.events | sort: "event_datetime") %}
-	{% for event in sorted_events %}
-	
-	{% capture eventdate %}{{ event.event_datetime  | date: "%Y-%m-%-e" }}{% endcapture %}
-	{% capture currentdate %}{{ 'now' | date: "%Y-%m-%-e" }}{% endcapture %}
-		
-		{% if eventdate >= currentdate %}
-		<li data-event-date="{{ event.event_datetime | date: "%Y/%m/%d" }}" class="event">
-			<div>
-				<span class="month">{{ event.event_datetime | date: "%b" }}</span>
-				<span class="date">{{ event.event_datetime | date: "%-d" }}</span>
-			</div>
-			<hgroup>
-				<h2>{{ event.title }}</h2>
-				<h3>{{ event.event_datetime | date: "%A %l:%M %p" }}</h3>
-			</hgroup>
-			<p>{{ event.content }}</p>
-		</li>
-		{% endif %}
-	{% endfor %}
+	{% assign sorted_events = site.events | sort: "event_datetime" %}
+	{% include events.html %}
 	</ul>	
 </div>
 

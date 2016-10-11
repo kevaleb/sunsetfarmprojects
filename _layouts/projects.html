@@ -14,26 +14,8 @@ layout: default
 <div class="events">
 	<h2>Upcoming Events</h2>
 	<ul id="events">
-	{% assign sorted_events = (site.events | sort: "_datetime") %}
-	{% for event in sorted_events %}
-	
-	{% capture eventdate %}{{ event.event_datetime  | date: "%Y-%m-%-e" }}{% endcapture %}
-	{% capture currentdate %}{{ 'now' | date: "%Y-%m-%-e" }}{% endcapture %}
-	
-		{% if page.title == event.project and eventdate >= currentdate %}
-		<li data-event-date="{{ event.event_datetime | date: "%Y/%m/%d" }}" class="event">
-			<div>
-				<span class="month">{{ event._datetime | date: "%b" }}</span>
-				<span class="date">{{ event._datetime | date: "%-d" }}</span>
-			</div>
-			<hgroup>
-				<h2>{{ event.title }}</h2>
-				<h3>{{ event._datetime | date: "%A %l:%M %p" }}</h3>
-			</hgroup>
-			<p>{{ event.content }}</p>
-		</li>
-		{% endif %}
-	{% endfor %}
+	{% assign sorted_events = site.events | where:"project",page.title  | sort: "_datetime" %}
+	{% include events.html %}
 	</ul>	
 </div>
 

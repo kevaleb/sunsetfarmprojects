@@ -17,26 +17,8 @@ permalink: /schedule/
 	<h2>Schedule</h2>
 	<p style="text-align: center;">Workdays are scheduled every 1st and 2nd Saturdays.</p>
 	<ul id="events">
-	{% assign sorted_events = (site.events | sort: "event_datetime") %}
-	{% for event in sorted_events %}
-	
-	{% capture eventdate %}{{ event.event_datetime  | date: "%Y-%m-%-e" }}{% endcapture %}
-	{% capture currentdate %}{{ 'now' | date: "%Y-%m-%-e" }}{% endcapture %}
-		
-		
-		<li data-event-date="{{ event.event_datetime | date: "%Y/%m/%d" }}" class="event">
-			<div>
-				<span class="month">{{ event.event_datetime | date: "%b" }}</span>
-				<span class="date">{{ event.event_datetime | date: "%-d" }}</span>
-			</div>
-			<hgroup>
-				<h2>{{ event.title }}</h2>
-				<h3>{{ event.event_datetime | date: "%A %l:%M %p" }}</h3>
-			</hgroup>
-			<p>{{ event.content }}</p>
-		</li>
-		
-	{% endfor %}
+	{% assign sorted_events = site.events | sort: "event_datetime" %}
+	{% include events.html %}
 	</ul>	
 </div>
 

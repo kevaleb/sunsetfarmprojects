@@ -13,17 +13,4 @@ navtitle: enterprises
 	</hgroup>
 </div>
 
-<ul class="blogposts">
-	{% for post in site.projects %}
-		{% if post.title != 'meetings' %}
-			<li>
-				<a href="{{ post.url }}">
-					<div class="postbanner" style="background-image: url({{ post.bannerimage_path }});"></div>
-					<!--<h3>{{ post.category }}</h3>-->
-					<h2>{{ post.title }}</h2>
-					{{ post.excerpt }}
-				</a>
-			</li>
-		{% endif %}
-	{% endfor %}
-</ul>
+{% include enterprises.html %}
