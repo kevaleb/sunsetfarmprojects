@@ -1,7 +1,7 @@
 ---
-title: New Ideas and Projects Meeting
+title: Ideas and Projects Meeting
 project: meetings
-event_datetime: 2016-09-06T19:30:00.000Z
+event_datetime: 2017-03-07 19:30:00
 ---
 
 
