@@ -1,7 +1,7 @@
 ---
 title: Management Reporting Meeting
 project: meetings
-event_datetime: 2016-11-08T19:30:00.000Z
+event_datetime: 2017-02-07 19:30:00
 ---
 
 
