@@ -5,3 +5,4 @@ event_datetime: 2017-01-21 12:00:00
 ---
 
 
+Committee #3
