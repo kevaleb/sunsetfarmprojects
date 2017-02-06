@@ -1,7 +1,8 @@
 ---
 title: Bird Harvest June
-project:
-event_datetime:
+project: chickens
+event_datetime: 2017-06-10 08:00:00
 ---
 
 
+Team A
