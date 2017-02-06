@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Schedule
+title: Enterprises
 description: A site about the sunset farm projects
 navclass: enterprises
 navtitle: enterprises
