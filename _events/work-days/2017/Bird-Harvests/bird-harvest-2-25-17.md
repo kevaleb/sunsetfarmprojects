@@ -1,7 +1,8 @@
 ---
-title: Bird Harvest 2-25-17
-project:
-event_datetime:
+title: Bird Harvest
+project: chickens
+event_datetime: 2017-02-25 08:00:00
 ---
 
 
+Team A
